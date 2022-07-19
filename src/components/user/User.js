@@ -18,7 +18,7 @@ function User(props){
         .then ((jsonData) => {
             const results = jsonData.results
             const user = results[0]
-            const userName = `&{user.ame.title}: ${user.name.first}: ${user.name.last} `
+            const userName = `${user.name.title}: ${user.name.first}: ${user.name.last} `
             const userEmail = `${user.email}`
             setName (userName)
             setEmail(userEmail)
